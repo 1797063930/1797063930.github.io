@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>C.L. Wang&#39;s 博客</title>
+  
+  <subtitle>一个热爱生活的“贾文清”</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://1797063930.github.io/"/>
+  <updated>2017-03-06T09:30:16.000Z</updated>
+  <id>http://1797063930.github.io/</id>
+  
+  <author>
+    <name>C.L. Wang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于C语言编译的问题</title>
+    <link href="http://1797063930.github.io/2017/03/06/my-note/"/>
+    <id>http://1797063930.github.io/2017/03/06/my-note/</id>
+    <published>2017-03-06T06:27:37.000Z</published>
+    <updated>2017-03-06T09:30:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>在运行C语言程序时候，有时会碰到这样的问题，命名的结构数组<a id="more"></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">typedef struct Material</span><br><span class="line">&#123;</span><br><span class="line">char Name[32]; </span><br><span class="line">double Ka;     </span><br><span class="line">double K_cond; </span><br><span class="line">double nref;   </span><br><span class="line">double kref;   </span><br><span class="line">int opac;      </span><br><span class="line">int Is_diffuse; </span><br><span class="line">double diff_reflect; </span><br><span class="line">&#125; Mater;</span><br></pre></td></tr></table></figure><p>而且有相应的参数文件，但是在debug时候就是显示读取参数文件时结构数组有问题</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sscanf_s(line, &quot;%*s %lf %lf %lf %lf %d %d %lf&quot;,</span><br><span class="line">&amp;Materials[ii].Ka,</span><br><span class="line">&amp;Materials[ii].K_cond,</span><br><span class="line">&amp;Materials[ii].nref,</span><br><span class="line">&amp;Materials[ii].kref,</span><br><span class="line">&amp;Materials[ii].opac,</span><br><span class="line">&amp;Materials[ii].Is_diffuse,</span><br><span class="line">&amp;Materials[ii].diff_reflect);</span><br></pre></td></tr></table></figure><p>如果实在找不出问题所在，就要考虑你安装的visual studio 是否安装了C++编译器，如果没有安装，就要重新安装一下就好了<br><img src="http://omdzk5wgn.bkt.clouddn.com/C.png" alt="“C”"> </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在运行C语言程序时候，有时会碰到这样的问题，命名的结构数组
+    
+    </summary>
+    
+      <category term="Note" scheme="http://1797063930.github.io/categories/Note/"/>
+    
+    
+      <category term="C语言" scheme="http://1797063930.github.io/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="C++" scheme="http://1797063930.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的第一篇博文</title>
+    <link href="http://1797063930.github.io/2017/03/02/new-article/"/>
+    <id>http://1797063930.github.io/2017/03/02/new-article/</id>
+    <published>2017-03-02T06:58:40.000Z</published>
+    <updated>2017-03-03T02:05:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>搭建了人生中的第一个个人博客，非常不容易，感谢我的<a href="https://www.wangsong520.com/" target="_blank" rel="external">老同学</a><a id="more"></a> 之前新浪微博和新浪博客的账号一直找不回，因为绑定的是以前的手机号，早已不用，所以账号找不回，这次在同学的帮助下有了自己的博客非常感谢，thank you!</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;搭建了人生中的第一个个人博客，非常不容易，感谢我的&lt;a href=&quot;https://www.wangsong520.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;老同学&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="心情" scheme="http://1797063930.github.io/categories/%E5%BF%83%E6%83%85/"/>
+    
+    
+      <category term="个人博客" scheme="http://1797063930.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="hexo" scheme="http://1797063930.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://1797063930.github.io/2017/03/01/hello-world/"/>
+    <id>http://1797063930.github.io/2017/03/01/hello-world/</id>
+    <published>2017-03-01T06:27:37.000Z</published>
+    <updated>2017-11-14T14:27:47.795Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info.<a id="more"></a>  If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info.
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://1797063930.github.io/categories/hexo/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>我想和你虚度时光</title>
+    <link href="http://1797063930.github.io/2015/06/08/xu-du-shi-guang/"/>
+    <id>http://1797063930.github.io/2015/06/08/xu-du-shi-guang/</id>
+    <published>2015-06-08T04:25:09.000Z</published>
+    <updated>2017-03-09T11:18:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>----摘自李元胜诗集</code></pre><p>我想和你虚度时光，比如低头看鱼<br>比如把茶杯留在桌子上，离开<br>浪费它们好看的阴影<br>我还想连落日一起浪费，比如散步<br>一直消磨到星光满天 <a id="more"></a><br>我还要浪费风起的时候<br>坐在走廊发呆，直到你眼中乌云<br>全部被吹到窗外<br>我已经虚度了世界，它经过我<br>疲倦，又像从未被爱过<br>但是明天我还要这样，虚度<br>满目的花草，生活应该像它们一样美好<br>一样无意义，像被虚度的电影<br>那些绝望的爱和赴死<br>为我们带来短暂的沉默<br>我想和你互相浪费<br>一起虚度短的沉默，长的无意义<br>一起消磨精致而苍老的宇宙<br>比如靠在栏杆上，低头看水的镜子<br>直到所有被虚度的事物<br>在我们身后，长出薄薄的翅膀</p><p><img src="http://omdzk5wgn.bkt.clouddn.com/xudushiguang.jpg" alt="“我想和你虚度时光”"> </p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=30706318&auto=1&height=66"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;----摘自李元胜诗集
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我想和你虚度时光，比如低头看鱼&lt;br&gt;比如把茶杯留在桌子上，离开&lt;br&gt;浪费它们好看的阴影&lt;br&gt;我还想连落日一起浪费，比如散步&lt;br&gt;一直消磨到星光满天
+    
+    </summary>
+    
+      <category term="书法" scheme="http://1797063930.github.io/categories/%E4%B9%A6%E6%B3%95/"/>
+    
+    
+      <category term="书法" scheme="http://1797063930.github.io/tags/%E4%B9%A6%E6%B3%95/"/>
+    
+      <category term="爱情" scheme="http://1797063930.github.io/tags/%E7%88%B1%E6%83%85/"/>
+    
+      <category term="诗歌" scheme="http://1797063930.github.io/tags/%E8%AF%97%E6%AD%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>雨中游拙政园记</title>
+    <link href="http://1797063930.github.io/2015/05/08/zhuo-zheng-yuan/"/>
+    <id>http://1797063930.github.io/2015/05/08/zhuo-zheng-yuan/</id>
+    <published>2015-05-08T14:18:15.000Z</published>
+    <updated>2017-03-06T09:35:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<font color="#800080">&emsp;&emsp;离上次去拙政园游玩已经一个月了，时间过得真快，回忆那日游园的情景，雨中游拙政园，别有风趣。<a id="more"></a><br>&emsp;&emsp;记忆中对拙政园最初的印象是在初中，那时候有篇课文讲的拙政园，从那时起，便一直对拙政园向往着，因此，这也是我游苏州的第一站。拙政园是中国私家园林的代表，是江南古典园林之最“拙政”二字是失意的御史王献臣对明朝政治讽刺。抛开历史，我关注的是园林的秀美。走到拙政园门口，视觉瞬间宽阔起来，宽绰而高大的明式门墙：中间高，门头上用隶书写的温润的“拙政园”三个字；两边低，门头上分别写着隶书体的“淡泊”， “朗润”，金色的字让你感觉到它的高贵，温润的字让你感觉到它的温和。我在想：园林的主人是个什么样的人。<br><img src="http://omdzk5wgn.bkt.clouddn.com/1.jpg" alt="“1”"><br>&emsp;&emsp;雨越下越大，从毛毛雨变成小雨了，旁边的小孩子都穿上了他们可爱的小雨衣，天真无邪。只是，固执的我不愿意打伞，我是怕它遮挡了我的视线，也是怕它耽搁了 我的旅行，因为那个下午，我去的晚。左边往上走便有房屋，有廊可避雨，先声夺人，还没踏进去，我便听到悠扬的昆曲，声音很美，只是我听不懂。沿着屋内的长 廊行走，一排排的石碑书法绘画艺术作品映入眼帘，这是我感兴趣的，虽然我的书法一直没有进步，我却从来没有停止过努力，这是个持久的事。幸运的是，刚好一 导演带着人群来这讲解，我了解到原来文征明和当年的园林主人是好友，所以，园内到处都是文征明的作品，文征明是吴中四才子之一，其诗，文，书，画无一不 精，人称“四绝”，文征明在书法方面是行书和小楷出众，其小楷尤为精美，温润而浑厚，这就是我喜欢的风格。<br><img src="http://omdzk5wgn.bkt.clouddn.com/2.jpg" alt="“2”"><br><img src="http://omdzk5wgn.bkt.clouddn.com/3.jpg" alt="“3”"><br>&emsp;&emsp;尔后走出房屋，置身园林向前走，便出现了个大的水塘，水塘是长形的，这里的水是主干，这一泓水将园林分成了两半，在这头你可以看到对岸的两个亭子，八角 的，一个地势更高些，在高度上看起来更有气势。向前走，我才知道，这里面到处都是亭台楼阁，到现在我都有些后悔当初去拙政园时没有好好补习下园林知识， 什么是亭？什么是轩？什么是台？什么又是阁？区别在哪里？这是学问。内行看门道，外行看热闹。好吧，既然承认自己没有文化，而仅仅是一个喜欢看风景的人。 继续前进，我看到各种曲折起伏的桥，有拱形的，有水平曲折前进的，还有避雨长廊，是跨水的桥，这个廊有点长，连接了几座楼宇。拙政园到处都是水，听说夏季 上面都长满了荷叶，开着荷花，主人引水入园就是为了雨季听荷叶滴雨声，夏季闻荷花的清香，多么闲适的生活呀！再繁华的姑苏城也阻挡不了对静逸的追求，所谓 “闹中取静”。<br><img src="http://omdzk5wgn.bkt.clouddn.com/4.jpg" alt="“4”"><br>&emsp;&emsp;雨大了起来，风也凉飕飕了，我的伞被雨打风吹破，加上寒冷，我找个了亭子歇息了下，亭子不高，却可以看遍周边的景物。置身高处，你会有一种成就感。雨一直 没有停，只是风开始安静了，我决定打着伞看风景，当然手机摄影一直没有停过，有点辛苦却是自愿的。糟糕的是走在半路上背包的背带突然给断了，一个人的旅行 本来就不易，现在我只能提着了！我喜欢那盘在小桥顶棚上的紫藤萝花，那么淡雅，和小桥流水一起，又显得那么精致。往下看过盆景我便往回走了，这是我才想起 我来拙政园的一大任务便是找到当年央视版《西游记》里女儿国国王邀请唐僧游园的拍摄场地，因为，里面的朱琳演的太棒，把女儿国国王的那份痴情和爱意表达的 淋漓尽致，连御帝哥哥都心动了，要不是琵琶精作祟的话。因为这集电视，我也喜欢上了一首歌——《女儿情》。听说西梁女儿国这集内容是杨洁导演自己改编的， 可能是演员太入戏，而当这集电视剧在拙政园拍摄结束，杨洁触景生情，当日便填完词，由许镜清作曲，便是这曲婉转动听的《女儿情》。冒着雨，打着伞，提着 包，这边还重新看视频，找场地，因为时间紧迫，最后我没有到那地儿，有点遗憾，但是我在水中里看到了鸳鸯，这是我平生第一次见，以前我都不相信真有这动 物。我想说，等下次有机会再去拙政园，我一定把园林知识先给补习下，这样，去的才会更有意义！<br>&emsp;&emsp;雨停了！游园三个小时，人不累，脚累了，此时的我，只想快步走，走，走……</font><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=27552550&auto=1&height=66"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      &lt;font color=&quot;#800080&quot;&gt;&amp;emsp;&amp;emsp;离上次去拙政园游玩已经一个月了，时间过得真快，回忆那日游园的情景，雨中游拙政园，别有风趣。
+    
+    </summary>
+    
+      <category term="人在旅途" scheme="http://1797063930.github.io/categories/%E4%BA%BA%E5%9C%A8%E6%97%85%E9%80%94/"/>
+    
+    
+      <category term="苏州" scheme="http://1797063930.github.io/tags/%E8%8B%8F%E5%B7%9E/"/>
+    
+      <category term="拙政园" scheme="http://1797063930.github.io/tags/%E6%8B%99%E6%94%BF%E5%9B%AD/"/>
+    
+      <category term="旅行" scheme="http://1797063930.github.io/tags/%E6%97%85%E8%A1%8C/"/>
+    
+      <category term="文化" scheme="http://1797063930.github.io/tags/%E6%96%87%E5%8C%96/"/>
+    
+  </entry>
+  
+</feed>
